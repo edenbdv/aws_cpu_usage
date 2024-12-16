@@ -1,40 +1,74 @@
-# aws_cpu_usage
+# AWS CPU Usage Dashboard
 
-Steps to Run:
-Clone the repository:
+This project is a full-stack application that fetches CPU usage data for AWS EC2 instances and displays it in a dynamic chart.
 
-bash
-Copy code
-git clone https://github.com/edenbdv/aws_cpu_usage.git
-cd aws_cpu_usage
-Create the .env file as mentioned above under the server folder.
+## Features
+- Fetches CPU utilization data using AWS CloudWatch.
+- Displays data in a responsive line chart.
+- Provides time-period options (`Last Hour`, `Last Day`) and adjustable intervals.
 
-Install dependencies for both client and server:
+## Prerequisites
+1. **Node.js** and **npm** installed on your system.
+2. AWS credentials with the necessary permissions for CloudWatch and EC2.
 
-bash
-Copy code
-cd server
-npm install
-cd ../client
-npm install
-Run the server and client:
+---
 
-bash
-Copy code
-cd server
-npm start  # Starts the server on port 5000
-cd ../client
-npm start  # Starts the React client
-Access the application at http://localhost:3000.
+## Steps to Run
 
-Important Note:
-The project relies on AWS credentials stored in a .env file for the server. I intentionally did not upload this file to GitHub for security purposes.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/edenbdv/aws_cpu_usage.git
+   cd aws_cpu_usage
 
-To run the project properly, please create a .env file under the server directory with the following variables:
-
-plaintext
-Copy code
+2. **Create a .env file in the server folder:**:
+The server requires AWS credentials. Create a file named .env in the server directory with the following content:
+``bash
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_REGION=your_aws_region
-Replace your_aws_access_key, your_aws_secret_key, and your_aws_region with your AWS credentials and region.
+
+Replace your_aws_access_key, your_aws_secret_key, and your_aws_region with your valid AWS credentials and region.
+
+3. **Install dependencies::**:
+   Install required packages for both the client and server.
+
+``bash
+# Install server dependencies
+cd server
+npm install
+
+# Install client dependencies
+cd ../client
+npm install
+
+4. **Run the server::**:
+Start the backend server.
+``bash
+cd server
+node app.js
+The server will start at http://localhost:5000.
+
+5. **Run the client::**:
+Start the React frontend in diffrent terminal
+
+``bash
+cd client
+npm start
+The frontend will be accessible at http://localhost:3000.
+
+6. **Access the Dashboard:::**:
+Open http://localhost:3000 in your browser and input the required details (e.g., IP Address, time period) to fetch and visualize the CPU usage data.
+
+# Notes
+- Ensure you have valid AWS credentials with access to CloudWatch and EC2 to retrieve metrics.
+- The .env file is not included in the repository for security reasons. You must create it manually with the variables specified above
+
+
+# Technologies Used
+- Frontend: React.js, Chart.js
+- Backend: Node.js, Express.js
+- AWS Services: CloudWatch, EC2
+- Other: dotenv, AWS SDK v3
+
+
+
