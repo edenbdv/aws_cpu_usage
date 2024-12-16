@@ -46,7 +46,7 @@ npm install
 
 4. **Run the server::**:
 Start the backend server.
-``bash
+```bash
 cd server
 node app.js
 ```
@@ -55,7 +55,7 @@ The server will start at http://localhost:5000.
 6. **Run the client::**:
 Start the React frontend in diffrent terminal
 
-``bash
+```bash
 cd client
 npm start
 ```
