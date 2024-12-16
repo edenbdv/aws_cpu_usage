@@ -6,7 +6,7 @@ This project is a full-stack application that fetches CPU usage data for AWS EC2
 - Fetches CPU utilization data using AWS CloudWatch.
 - Displays data in a responsive line chart.
 - Provides time-period options (`Last Hour`, `Last Day`) and adjustable intervals.
-- 
+  
 ![image](https://github.com/user-attachments/assets/be9f314a-fbae-47cb-9847-9ccce5d2b109)
 
 ## Prerequisites
