@@ -158,7 +158,7 @@ const DynamicChart = () => {
             type="text"
             value={ipAddress}
             onChange={(e) => setIpAddress(e.target.value)}
-            placeholder="Enter IP Address"
+            placeholder="Enter IP Address "
           />
         </label>
 
