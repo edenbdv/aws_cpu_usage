@@ -22,7 +22,7 @@ This project is a full-stack application that fetches CPU usage data for AWS EC2
 
 2. **Create a .env file in the server folder:**:
 The server requires AWS credentials. Create a file named .env in the server directory with the following content:
-``bash
+```bash
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_REGION=your_aws_region
@@ -32,7 +32,7 @@ Replace your_aws_access_key, your_aws_secret_key, and your_aws_region with your 
 3. **Install dependencies::**:
    Install required packages for both the client and server.
 
-``bash
+```bash
 # Install server dependencies
 cd server
 npm install
@@ -60,15 +60,15 @@ The frontend will be accessible at http://localhost:3000.
 Open http://localhost:3000 in your browser and input the required details (e.g., IP Address, time period) to fetch and visualize the CPU usage data.
 
 # Notes
-- Ensure you have valid AWS credentials with access to CloudWatch and EC2 to retrieve metrics.
-- The .env file is not included in the repository for security reasons. You must create it manually with the variables specified above
+- Ensure you have valid AWS credentials with access to **CloudWatch** and **EC2** to retrieve metrics.
+- The .env file is not included in the repository for security reasons. **You must create it manually** with the variables specified above
 
 
 # Technologies Used
-- Frontend: React.js, Chart.js
-- Backend: Node.js, Express.js
-- AWS Services: CloudWatch, EC2
-- Other: dotenv, AWS SDK v3
+- **Frontend**: React.js, Chart.js
+- **Backend**: Node.js, Express.js
+- **AWS Services**: CloudWatch, EC2
+- **Other**: dotenv, AWS SDK v3
 
 
 
