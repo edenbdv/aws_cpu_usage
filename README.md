@@ -19,6 +19,7 @@ This project is a full-stack application that fetches CPU usage data for AWS EC2
    ```bash
    git clone https://github.com/edenbdv/aws_cpu_usage.git
    cd aws_cpu_usage
+   ```
 
 2. **Create a .env file in the server folder:**:
 The server requires AWS credentials. Create a file named .env in the server directory with the following content:
@@ -26,6 +27,7 @@ The server requires AWS credentials. Create a file named .env in the server dire
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_REGION=your_aws_region
+```
 
 Replace your_aws_access_key, your_aws_secret_key, and your_aws_region with your valid AWS credentials and region.
 
@@ -40,20 +42,23 @@ npm install
 # Install client dependencies
 cd ../client
 npm install
+```
 
 4. **Run the server::**:
 Start the backend server.
 ``bash
 cd server
 node app.js
+```
 The server will start at http://localhost:5000.
 
-5. **Run the client::**:
+6. **Run the client::**:
 Start the React frontend in diffrent terminal
 
 ``bash
 cd client
 npm start
+```
 The frontend will be accessible at http://localhost:3000.
 
 6. **Access the Dashboard:::**:
