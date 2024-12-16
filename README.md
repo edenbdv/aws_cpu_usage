@@ -31,7 +31,7 @@ AWS_REGION=your_aws_region
 
 Replace your_aws_access_key, your_aws_secret_key, and your_aws_region with your valid AWS credentials and region.
 
-3. **Install dependencies::**:
+3. **Install dependencies:**:
    Install required packages for both the client and server.
 
 ```bash
@@ -52,7 +52,7 @@ node app.js
 ```
 The server will start at http://localhost:5000.
 
-6. **Run the client::**:
+6. **Run the client:**:
 Start the React frontend in diffrent terminal
 
 ```bash
@@ -61,7 +61,7 @@ npm start
 ```
 The frontend will be accessible at http://localhost:3000.
 
-6. **Access the Dashboard:::**:
+6. **Access the Dashboard:**:
 Open http://localhost:3000 in your browser and input the required details (e.g., IP Address, time period) to fetch and visualize the CPU usage data.
 
 # Notes
